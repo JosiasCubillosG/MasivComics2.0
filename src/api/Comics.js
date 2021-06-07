@@ -2,7 +2,7 @@ import Axios from "axios";
 
 export default class Comics {
   constructor() {
-    this.getComicsEndpoint = "http://localhost:8080/";
+    this.getComicsEndpoint = "https://xkcd.com/";
   }
 
   getComics(payload) {
