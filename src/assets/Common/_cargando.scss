@@ -1,0 +1,38 @@
+.cargando{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  &__animacion {
+      display: inline-block;
+      width: 180px;
+      height: 180px;
+      text-align: center;
+      font-weight: bold;
+      font-size: xx-large;
+      font-family: 'Coming Soon', cursive;
+      color: rgba(67,156,239,1);
+      &:after {
+          content: " ";
+          display: block;
+          width: 180px;
+          height: 180px;
+          margin: 8px;
+          border-radius: 50%;
+          border: 6px solid rgba(67,156,239,1);;
+          border-color: rgba(67,156,239,1) transparent rgba(67,156,239,1) transparent;
+          animation: cargando__animacion 1.2s linear infinite;
+      }
+  }
+}
+  
+
+@keyframes cargando__animacion {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,17 @@
+.lightbox{
+  visibility:hidden;
+  z-index: 99;
+  height:100%;
+  width:100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  .box-img{
+    height:max-content;
+    width:max-content;
+    img{
+      max-height: 90vh;
+    }
+  }
+}

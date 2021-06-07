@@ -1,0 +1,17 @@
+@import '~bulma';
+/* @import '../../node_modules/bulma/css/bulma.css';
+@import '../../node_modules/bulma/css/bulma.min.css';
+@import '../../node_modules/bulma/bulma.sass'; */
+@import "./Home/stars";
+@import "./Home/content";
+@import "./menu";
+@import "./header";
+@import "./app";
+@import "./List/comic";
+@import "./List/detailComic";
+@import "./Common/lightbox";
+@import "./Common/cargando";
+@import "./Common/error";
+@import "./List/noComics";
+@import "./typography/fonts.scss";
+@import "./List/searcher";

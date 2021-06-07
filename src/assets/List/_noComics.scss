@@ -1,0 +1,16 @@
+.list-no-comics{
+  width:100%;
+  .no-comics{
+    .title{
+      font-family: 'Bangers', cursive;
+      font-size: 32px;
+      letter-spacing: 3px;
+      color: red;
+      -webkit-text-stroke: 0.2px #efdf00;
+    }
+    .img{
+      height: 350px;
+      border-radius: 24px;
+    }
+  }
+}

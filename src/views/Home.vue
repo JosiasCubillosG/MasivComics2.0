@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home p-0">
+    <Error v-if="showError" />
+    <Content v-else />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import { mapState } from "vuex";
+import { typesComics } from "@/store/modules/comics/types";
+import Content from "@/components/home/Content.vue";
+import Error from "@/components/common/Error.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld,
+    Content,
+    Error,
+  },
+  computed: {
+    ...mapState(typesComics.PATH, ["showError"]),
   },
 };
 </script>

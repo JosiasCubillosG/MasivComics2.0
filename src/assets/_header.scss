@@ -1,0 +1,28 @@
+.app-header{
+  .header-img{
+    height:80px;
+    width:80px;
+  }
+  .header-title{
+    font-family: 'Bangers', cursive;
+    font-size: xx-large;
+    color: rgb(25, 25, 112);
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-header{
+    height: 110px;
+    &__container{
+      .header-items{
+        height: 100%;
+        .header-img{
+          height: 100%;
+        }
+        .header-title{
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}

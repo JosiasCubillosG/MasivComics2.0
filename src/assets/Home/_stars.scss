@@ -1,0 +1,20 @@
+.comic-stars{
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  &__container:hover, span:hover ~ span {
+    transition: 2s all;
+    transform: rotate(360deg);
+    cursor: pointer;
+  }
+}
+@media (min-width: 768px) {
+  .comic-stars{
+    &__container{
+      margin: 24px !important;
+      .icon-star{
+        font-size: 2em;
+      }
+    }
+  }
+}

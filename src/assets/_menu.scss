@@ -1,0 +1,27 @@
+.app-menu{
+  a{
+    height:32px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-family: 'Bangers', cursive;
+    font-size: large;
+    letter-spacing:3px;
+    color: red;
+    -webkit-text-stroke: .6px rgb(25, 25, 112);
+  }
+  a:last-child {
+    border-left: 1px solid gray;
+  }
+  a.active {
+    background-color: #efdf00;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-menu{
+    a{
+      height: 40px;
+      font-size: xx-large;
+    }
+  }
+}
