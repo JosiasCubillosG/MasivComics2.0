@@ -8,22 +8,21 @@
     >
       <img class="image-comic" :src="comic.img" />
     </div>
-    <div class="comic-rating column is-12">
-      <span class="rating-container" v-for="(star, index) in 5" :key="index">
-        <i v-if="index < comic.rating" class="fas fa-star fa-lg m-2" style="color: yellow"></i>
-        <i v-else class="fas fa-star fa-lg m-2" style="color: black"></i>
-      </span>
-    </div>
+    <RatedStars class="comic-rating column is-12" :conditionRatedStar="comic.rating" />
   </div>
 </template>
 <script>
 import { mapActions } from "vuex";
 import { typesComics } from "@/store/modules/comics/types";
+import RatedStars from "@/components/common/RatedStars.vue";
 
 export default {
   name: "Comic",
   props: {
     comic: { type: Object, default: () => {} },
+  },
+  components: {
+    RatedStars,
   },
   methods: {
     ...mapActions(typesComics.PATH, {

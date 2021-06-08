@@ -1,0 +1,10 @@
+.rated-stars{
+  &__container{
+    .star-rated{
+      color: #efdf00;
+    }
+    .star-no-rated{
+      color: #2c3e50;
+    }
+  }
+}

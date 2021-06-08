@@ -1,5 +1,6 @@
 import { typesComics } from "@/store/modules/comics/types";
 import ComicsApi from "@/api/Comics";
+import { randomNumber } from "@/helpers/numberRandom";
 
 const comicsApi = new ComicsApi();
 
@@ -7,7 +8,7 @@ export const actions = {
   [typesComics.actions.GET_COMIC]({ commit, dispatch }) {
     commit(typesComics.mutations.SET_STATE_SHOW_LOADING, true);
     comicsApi
-      .getComics(Math.floor(Math.random() * (2470 - 1) + 1))
+      .getComics(randomNumber())
       .then((res) => {
         commit(typesComics.mutations.SET_STATE_SHOW_LOADING, false);
         commit(typesComics.mutations.SET_COMIC, res.data);

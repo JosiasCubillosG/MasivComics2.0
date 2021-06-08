@@ -20,12 +20,10 @@
           </label>
         </div>
       </div>
-      <div class="detail-stars column is-12-mobile is-12-tablet">
-        <span class="detail-stars__container m-2" v-for="(star, index) in 5" :key="index">
-          <i v-if="index < detailComic.rating" class="fas fa-star fa-2x" style="color: yellow"></i>
-          <i v-else class="fas fa-star fa-2x" style="color: black"></i>
-        </span>
-      </div>
+      <RatedStars
+        :conditionRatedStar="detailComic.rating"
+        class="detail-stars column is-12-mobile is-12-tablet"
+      />
       <div class="detail-img column is-12-mobile is-12-tablet">
         <img :src="detailComic.img" @click="openImage" />
       </div>
@@ -36,6 +34,7 @@
 <script>
 import { mapActions, mapState } from "vuex";
 import { typesComics } from "@/store/modules/comics/types";
+import RatedStars from "@/components/common/RatedStars.vue";
 import LightBox from "@/components/common/LightBox.vue";
 
 export default {
@@ -46,6 +45,7 @@ export default {
     };
   },
   components: {
+    RatedStars,
     LightBox,
   },
   computed: {

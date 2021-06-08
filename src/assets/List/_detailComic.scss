@@ -1,5 +1,6 @@
-html, body{
-  height: 100%;
+html, body, #app{
+  height:100%;
+  background-color:rgb(70, 130, 180);;
 }
 
 .detail-comic{
@@ -11,12 +12,8 @@ html, body{
       img{
         cursor: pointer;
         border: 1px solid #ccc;
+        border-radius: 4px;
         box-shadow: 0 8px 6px -6px black;
-      }
-    }
-    .detail-stars{
-      &__container{
-        line-height: 20px;
       }
     }
     .detail-title{

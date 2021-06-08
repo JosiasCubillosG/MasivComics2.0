@@ -1,5 +1,5 @@
 <template>
   <div class="cargando">
-    <div class="cargando__animacion">Cargando....</div>
+    <div class="cargando__animacion">Loading....</div>
   </div>
 </template>

@@ -22,20 +22,6 @@ export default {
   computed: {
     ...mapState(typesComics.PATH, ["randomComic", "listComics"]),
   },
-  watch: {
-    listComics: {
-      handler(value) {
-        console.log(value);
-        for (let i = Object.keys(this.$refs).length; i > 0; i -= 1) {
-          if (i <= value - 1) {
-            this.$refs[`star${i + 1}`][0].style.color = "yellow";
-          } else {
-            this.$refs[`star${i + 1}`][0].style.color = "black";
-          }
-        }
-      },
-    },
-  },
   methods: {
     ...mapActions(typesComics.PATH, {
       rateComic: typesComics.actions.RATE_COMIC,

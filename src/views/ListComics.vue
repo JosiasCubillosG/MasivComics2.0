@@ -20,8 +20,8 @@
 <script>
 import { mapState, mapGetters } from "vuex";
 import { typesComics } from "@/store/modules/comics/types";
+import Searcher from "@/components/common/Searcher.vue";
 import Comic from "@/components/list/Comic.vue";
-import Searcher from "@/components/list/Searcher.vue";
 import NoComics from "@/components/list/NoComics.vue";
 
 export default {
