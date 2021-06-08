@@ -20,7 +20,7 @@
         is-flex is-flex is-justify-content-center is-align-items-center
       "
       to="/list-comics"
-      >Lists</router-link
+      >List</router-link
     >
   </div>
 </template>

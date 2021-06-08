@@ -1,6 +1,6 @@
 # masiv-comics
 
-Masiv Comics es una aplicación que lista comics aleatorios de la api de hkcd, permite calificar cada uno de estos comics y a su vez permite ver en detalle cualquier comic que haya sido calificado con anterioridad.
+Masiv Comics es una aplicación que lista comics aleatorios de la api de hkcd, permite calificar cada uno de estos comics y a su vez permite buscar y ver en detalle cualquier comic que haya sido calificado con anterioridad.
 
 ---
 
@@ -17,7 +17,7 @@ Podemos visualizar el proyecto de dos formas diferentes:
 
  - Como primera opción para visualizar unicamente la aplicación en funcionamiento podemos acceder a la siguiente url donde ya esta alojado el proyecto corriendo en su ultima versión.
 
-# https://master.d2qf43pnxvali8.amplifyapp.com/
+### https://master.d2qf43pnxvali8.amplifyapp.com/
 
 - Como segunda opción para visualizar el proyecto y a su vez poder visualizar el codigo fuente debemos seguir los siguientes pasos :
 
@@ -30,32 +30,32 @@ Podemos visualizar el proyecto de dos formas diferentes:
 ## Lista de comandos a tener en cuenta:
 
 
-# Configuración del proyecto
+### Configuración del proyecto
 ```
 npm install
 ```
 
-# Compilar y hot-reload del proyecto en desarrollo
+### Compilar y hot-reload del proyecto en desarrollo
 ```
 npm run serve
 ```
 
-# Compilación y minificación para producción
+### Compilación y minificación para producción
 ```
 npm run build
 ```
 
-# Correr los tests unitarios
+### Correr los tests unitarios
 ```
 npm run test:unit
 ```
 
-# Correr el coverage abarcado por los tests
+### Correr el coverage abarcado por los tests
 ```
 test:coverage
 ```
 
-# Correr las pruebas estaticas con slint
+### Correr las pruebas estaticas con slint
 ```
 npm run lint
 ```
