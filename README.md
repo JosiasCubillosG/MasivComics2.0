@@ -17,7 +17,7 @@ Podemos visualizar el proyecto de dos formas diferentes:
 
  - Como primera opción para visualizar unicamente la aplicación en funcionamiento podemos acceder a la siguiente url donde ya esta alojado el proyecto corriendo en su ultima versión.
 
-### https://master.d2qf43pnxvali8.amplifyapp.com/
+### https://master.d1c3vhyz6fwmpe.amplifyapp.com/
 
 - Como segunda opción para visualizar el proyecto y a su vez poder visualizar el codigo fuente debemos seguir los siguientes pasos :
 
