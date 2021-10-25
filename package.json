@@ -7,10 +7,13 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:coverage": "vue-cli-service test:unit --coverage",
+    "test:integration": "vue-cli-service test:unit tests/integration",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/vue": "^5.8.2",
     "axios": "^0.21.1",
     "bulma": "^0.9.2",
     "core-js": "^3.6.5",

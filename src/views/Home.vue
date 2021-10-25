@@ -1,7 +1,7 @@
 <template>
   <div class="home p-0">
     <Error v-if="showError" />
-    <Content v-else />
+    <Content data-testId="home__comics" v-else />
   </div>
 </template>
 

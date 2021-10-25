@@ -1,5 +1,5 @@
 <template>
-  <div class="detail-comic">
+  <div class="detail-comic" data-testId="detail-comic">
     <div class="detail-comic__container columns is-multiline m-0 p-5">
       <div class="detail-title column is-12-mobile is-12-tablet">
         {{ detailComic.title }}

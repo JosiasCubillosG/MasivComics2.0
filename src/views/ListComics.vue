@@ -12,7 +12,7 @@
         </div>
       </template>
       <div v-else class="list-no-comics">
-        <NoComics />
+        <NoComics data-testId="no-comics__availables" />
       </div>
     </div>
   </div>

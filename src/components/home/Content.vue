@@ -19,7 +19,7 @@
 <script>
 import { mapActions, mapState } from "vuex";
 import { typesComics } from "@/store/modules/comics/types";
-import Cargando from "@/components/common/Cargando.vue";
+import Cargando from "@/components/common/Loading.vue";
 import Stars from "./Stars.vue";
 
 export default {
